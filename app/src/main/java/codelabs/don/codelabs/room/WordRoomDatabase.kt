@@ -8,7 +8,7 @@ import android.os.AsyncTask
 import android.arch.persistence.db.SupportSQLiteDatabase
 
 
-@Database(entities = arrayOf(Word::class), version = 1)
+@Database(entities = arrayOf(Word::class), version = 1, exportSchema = true)
 abstract class WordRoomDatabase : RoomDatabase() {
 
     abstract fun wordDao(): WordDao
